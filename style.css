@@ -22,6 +22,30 @@ h1{
   font-size: 40px;
   font-weight: 800
 }
+.menu-ul{
+  display: flex;
+}
+.menu-ul a{
+  text-decoration: none;
+}
+.menu-ul li:hover{
+  background: #D84727;
+  color: #fff;
+}
+.menu-li{
+  margin-top: 20px;
+  margin-left: 30px;
+  list-style-type: none;
+  color: #66666E;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 20px;
+
+}
+.menu-li[type="Home"]{
+    background: #D84727;
+    color: #fff;
+}
 .code{
   display: flex;
   justify-content: space-between;
@@ -49,6 +73,61 @@ footer{
   margin-top: 20px;
   padding: 10px;
 }
+
+/* about */
+.profile{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 14%;
+  margin: 40px;
+}
+main .profile-left{
+  background: #03312E;
+  width: 100%;
+  border: 6px solid #ccc;
+
+}
+main .profile-right{
+  background: #fff;
+}
+.profile-left img{
+  width: 100%;
+  padding: 20%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.profile-left h2{
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.profile-right .title{
+  opacity: 65%;
+  font-size: 30px;
+  font-weight: 700;
+  background: #03312E;
+  color: #fff;
+  padding: 6px;
+  text-align: center;
+  margin-left: 34%;
+}
+.profile-left p{
+  color: #fff;
+  font-size: 14px;
+  margin-left: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 65%;
+}
+.profile-right p{
+  font-size: 16px;
+  opacity: 65%;
+  margin-top: 30px;
+}
+.profile-left title{
+  color: #fff;
+}
 @media screen and (max-width:600px)  {
   .code{
     display: grid;
@@ -65,5 +144,21 @@ footer{
   }
   section{
     font-size: 2em;
+  }
+}
+/* @media about */
+@media screen and (max-width:600px){
+  .profile{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .profile-right .title{
+    margin-left: 20%;
+  }
+  .profile{
+    gap: 2%;
+  }
+  .profile-right p{
+    margin-top: 4%;
   }
 }
